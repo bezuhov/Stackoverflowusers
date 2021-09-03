@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userListFragment">
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.android.example.stackoverflowwork.presentation.userList.UserListFragment"
+        android:label="UserListFragment"
+        tools:layout="@layout/fragment_user_list">
+        <argument
+        android:name="page_type"
+        app:argType="com.android.example.stackoverflowwork.data.enum.UserListPageType"
+        android:defaultValue="GENERAL"
+        />
+        <argument
+            android:name="search_query"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_userListFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.android.example.stackoverflowwork.presentation.userDetail.UserDetailFragment"
+        android:label="UserDetailFragment" >
+
+        <argument
+            android:name="imageUrl"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="name"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="score"
+            app:argType="integer"
+             />
+        <argument
+            android:name="bronze"
+            app:argType="integer"
+             />
+        <argument
+            android:name="silver"
+            app:argType="integer"
+            />
+        <argument
+            android:name="gold"
+            app:argType="integer"
+            />
+        <argument
+            android:name="create_date"
+            app:argType="integer" />
+        <argument
+            android:name="location"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+</navigation>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">StackoverFlowWork</string>
+
+    <!-- Error -->
+    <string name="error_unknown">İsteğinizi şuanda gerçekleştiremiyoruz.\nLütfen daha sonra tekrar deneyin!</string>
+    <string name="error_connection_not_found">Lütfen bağlantı ayarlarınızı kontrol edin ve tekrar deneyin.</string>
+    <string name="error_connection_timeout">Bağlantı zaman aşımına uğradı!</string>
+
+    <string name="no_search_result">No search results.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty">Belirtilen isimde bir kullanıcı bulunamadı.</string>
+    <string name="generic_name">Adı %s</string>
+    <string name="generic_score">Skor %s</string>
+    <string name="generic_bronze">Bronz:  %s</string>
+    <string name="generic_silver">Gümüş:  %s</string>
+    <string name="generic_gold">Altun:  %s</string>
+    <string name="generic_date">Tarih : %s</string>
+    <string name="generic_location">Yer : %s</string>
+</resources>
